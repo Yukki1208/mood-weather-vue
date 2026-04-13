@@ -6,7 +6,15 @@
 import { onMounted, ref } from "vue"
 import { useMood } from "../composables/useMood"
 import Chart from "chart.js/auto"
-
+options: {
+  plugins: {
+    legend: {
+      labels: {
+        color: "#fff"
+      }
+    }
+  }
+}
 const canvas = ref()
 const { stats } = useMood()
 
@@ -29,3 +37,4 @@ onMounted(() => {
   })
 })
 </script>
+

@@ -44,3 +44,10 @@ defineProps({ mood: String })
   92% { filter: brightness(2); }
 }
 </style>
+background-size: 200% 200%;
+animation: move 8s ease infinite;
+@keyframes move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
